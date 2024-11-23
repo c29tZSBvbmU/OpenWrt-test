@@ -1,7 +1,7 @@
 # This is free software, lisence use MIT.
-# Copyright (C) https://github.com/yfdoor
+# Copyright (C) https://github.com/c29tZSBvbmU
 #
-# https://github.com/yfdoor/OpenWrt
+# https://github.com/c29tZSBvbmU/OpenWrt-test
 # Description: GitHub Actions for OpenWrt Build
 
 name: OpenWrt-Build-brax_fa556
@@ -149,11 +149,11 @@ jobs:
         run: |
           cd openwrt/bin
           git init
-          git config user.name "yfdoor"
-          git config user.email "yfdoor@github.com"
+          git config user.name "c29tZSBvbmU"
+          git config user.email "c29tZSBvbmU@github.com"
           git add .
           git commit -m "Update OpenWrt_"$CONF_FILE
-          git push --force --quiet https://$GITHUB_TOKEN@github.com/yfdoor/OpenWrt.git HEAD:OpenWrt_$CONF_FILE
+          git push --force --quiet https://$GITHUB_TOKEN@github.com/c29tZSBvbmU/OpenWrt-test.git HEAD:OpenWrt_$CONF_FILE
           rm -rf .git
 
       # 上传 Bin
@@ -224,7 +224,7 @@ jobs:
           1、源码：${{ env.REPO_URL }}
           2、分支：${{ env.REPO_BRANCH }}
           3、设备：${{ env.DEVICE_NAME }}
-          -- Build by YFDOOR with Github Actions on ${{ env.RELEASE_DATE }} for ${{ env.DEVICE_NAME }} device
+          -- Build by c29tZSBvbmU with Github Actions on ${{ env.RELEASE_DATE }} for ${{ env.DEVICE_NAME }} device
           
           外链下载：
           EOF
