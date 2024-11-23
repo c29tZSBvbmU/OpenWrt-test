@@ -28,8 +28,8 @@ env:
   REPO_URL: https://github.com/c29tZSBvbmU/openwrt-diy.git
   REPO_BRANCH: main
   CONF_FILE: fa556
-  DIY0_FILE: DIY0.sh
-  DIY1_FILE: DIY1.sh
+   #DIY0_FILE: DIY0.sh
+  # DIY1_FILE: DIY1.sh
   SSH_ACTION: false
   UPLOAD_BRANCH: false
   UPLOAD_BIN_DIR: true
