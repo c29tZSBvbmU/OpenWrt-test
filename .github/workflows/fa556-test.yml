@@ -118,7 +118,8 @@ jobs:
       - name: Make Download
         run: |
           cd openwrt
-          make defconfig
+          #make defconfig
+          make defconfig IGNORE_ERRORS=1
           make download -j8
           find dl/ -size -1024c -exec rm -f {} \;
 
