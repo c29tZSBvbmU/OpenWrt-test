@@ -2,6 +2,15 @@
 # This is free software, lisence use MIT.
 # Copyright (C) https://github.com/yfdoor
 
+# 获取脚本的绝对路径
+SCRIPT_PATH=$(dirname $(readlink -f $0))
+
+# 显示脚本文件的路径
+echo "脚本文件的路径是: $SCRIPT_PATH"
+
+# 显示当前执行脚本的路径
+echo "当前路径是: $(pwd)"
+
 # Define IP
 sed -i 's/192.168.1.1/192.168.100.1/g' package/base-files/files/bin/config_generate
 sed -i 's/10.10.10.1/192.168.100.1/g' package/base-files/files/bin/config_generate
