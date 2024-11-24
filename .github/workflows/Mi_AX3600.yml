@@ -1,10 +1,10 @@
 # This is free software, lisence use MIT.
 # Copyright (C) https://github.com/yfdoor
 #
-# https://github.com/yfdoor/OpenWrt
-# Description: GitHub Actions for OpenWrt Build
+# https://github.com/yfdoor/打开Wrt
+# Description: GitHub Actions for 打开Wrt Build
 
-name: OpenWrt-Build-Mi_AX3600-test
+name: 打开Wrt-Build-Mi_AX3600-test
 
 # 触发条件
 on:
@@ -26,7 +26,7 @@ env:
   #####   2：编译第三方源码
   #####   3：编译官方源码 & 第三方 Package
   #####################################################
-  REPO_URL: https://github.com/openwrt/openwrt.git
+  REPO_URL: https://github.com/c29tZSBvbmU/openwrt-diy.git
   REPO_BRANCH: v23.05.2
   CONF_FILE: Mi_AX3600
   DIY0_FILE: DIY0.sh
