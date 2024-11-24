@@ -27,7 +27,7 @@ env:
   #####   3：编译官方源码 & 第三方 Package
   #####################################################
   REPO_URL: https://github.com/c29tZSBvbmU/openwrt-diy.git
-  REPO_BRANCH: v23.05.2
+  REPO_BRANCH: main
   CONF_FILE: Mi_AX3600
   DIY0_FILE: DIY0.sh
   DIY1_FILE: DIY1.sh
